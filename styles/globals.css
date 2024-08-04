@@ -3,12 +3,38 @@
 @tailwind utilities;
 
 *{
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
-body{
-  min-height: 100vh;
-  background: linear-gradient(to bottom,lightgreen ,lightyellow);
+
+#seek::-webkit-slider-thumb {
+  width: 14px;
+  -webkit-appearance: none;
+appearance: none;
+  height: 14px;
+  cursor: ew-resize;
+  background: #FFF;
+  border-radius: 50%;
+  
 }
+#volume::-webkit-slider-thumb {
+  width: 14px;
+  -webkit-appearance: none;
+appearance: none;
+  height: 14px;
+  cursor: ew-resize;
+  background: #000;
+  border-radius: 50%;
+  
+}
+
+
+body {
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 25px;
+}
+
+
